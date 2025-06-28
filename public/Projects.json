@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "title": "StoveStories",
+      "stack": [
+        "React",
+        "JavaScript",
+        "Firebase",
+        "MongoDB",
+        "NodeJS",
+        "ExpressJS",
+        "React Router"
+      ],
+      "description": "StoveStories is a vibrant recipe book website that empowers users to share, explore, and save recipes, connecting food lovers through cooking stories.",
+      "liveUrl": "https://stovestories-1a7e6.web.app/",
+      "sourceUrl": "https://github.com/ShahrinTarin/StoveStore",
+      "keyFeatures": [
+        "User-generated recipes with images, preparation times, and categories.",
+        "Like, edit, or delete recipes with real-time updates.",
+        "Personalized recipe collections filtered by user ID.",
+        "Integrated tooltips and animations for enhanced user experience."
+      ],
+      "image": "https://i.ibb.co/KchFkG10/Screenshot-2025-06-28-194233.png",
+      "challenges": "Managing real-time updates and data consistency across multiple users was challenging. Implementing secure authentication and authorization also required careful planning.",
+      "improvements": "In the future, I plan to add a social feed, advanced search filters, and integration with third-party recipe APIs to expand the recipe database."
+    },
+    {
+      "title": "MathMatter",
+      "stack": [
+        "React",
+        "JavaScript",
+        "Firebase",
+        "MongoDB",
+        "NodeJS",
+        "ExpressJS",
+        "React Router"
+      ],
+      "description": "MathMatter is an interactive web app that makes learning mathematics engaging through practice tools, problem sets, visualizations, and progress tracking.",
+      "liveUrl": "https://mathmatter-by-shahrin-tarin.web.app/",
+      "sourceUrl": "https://github.com/ShahrinTarin/mathematter",
+      "keyFeatures": [
+        "Filter blogs by category or title using query parameters.",
+        "Rank blogs by length of description for easy discovery.",
+        "Add, edit, delete, and comment on blogs with real-time updates.",
+        "Motion animations and tooltips enhance user experience."
+      ],
+      "image": "https://i.ibb.co/7xFwz99G/Screenshot-2025-06-28-194324.png",
+      "challenges": "Designing an intuitive UX for complex math interactions was tricky. Handling large sets of practice problems and ensuring smooth performance required optimization.",
+      "improvements": "Future plans include adding gamification features, advanced analytics for progress tracking, and integrating AI-based practice recommendations."
+    },
+    {
+      "title": "Globe Quest",
+      "stack": [
+        "React",
+        "JavaScript",
+        "Firebase",
+        "React Router",
+        "NodeJS"
+      ],
+      "description": "Globe Quest is a holiday plan subscription box website showcasing themed travel kits through an interactive Swiper JS carousel.",
+      "liveUrl": "https://globe-quest-77b62.web.app/",
+      "sourceUrl": "https://github.com/ShahrinTarin/globe-Quest",
+      "keyFeatures": [
+        "Static subscription plans with clear titles and pricing.",
+        "Contact form for user inquiries and engagement.",
+        "Strong branding to reflect global holiday adventures.",
+        "Visually engaging themed holiday boxes using Swiper JS."
+      ],
+      "image": "https://i.ibb.co/Rk1xfmrh/Screenshot-2025-06-28-194459.png",
+      "challenges": "Integrating the Swiper carousel responsively and ensuring cross-device performance was a challenge. Also, ensuring smooth contact form submissions required backend tuning.",
+      "improvements": "I plan to add user accounts, dynamic travel plan customization, and integration with payment gateways to enable real-time subscriptions."
+    }
+  ]
+}

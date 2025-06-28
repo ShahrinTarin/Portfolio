@@ -11,10 +11,10 @@ const ProjectCard = ({ project }) => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="w-11/12 mx-auto rounded-xl border border-gray-500 p-6 md:flex gap-8 hover:border-green-500 transition"
+        className="w-11/12 mx-auto rounded-xl border border-gray-500 p-6 lg:flex gap-8 hover:border-green-500 transition"
       >
         {/* Left: Image */}
-        <div className="md:w-1/2 p-4 flex items-center justify-center">
+        <div className="lg:w-1/2 p-4 flex items-center justify-center">
           <img
             src={project.image}
             alt={project.title}

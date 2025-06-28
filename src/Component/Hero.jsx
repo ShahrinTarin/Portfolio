@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp, FaDownload, FaHome } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import Typewriter from 'typewriter-effect'
 const Hero = () => {
     return (
         <>
@@ -32,20 +33,20 @@ const Hero = () => {
                     <motion.h1 whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
-        viewport={{ once: false, amount: 0.2 }} className="text-6xl font-light mb-6">Hi, I'm
+        viewport={{ once: false, amount: 0.2 }} className="text-5xl font-light mb-6">Hi, I'm
                         Shahrin <span className="font-normal">Akther</span>
                     </motion.h1>
                     <motion.h2 whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: false, amount: 0.2 }}  className="text-3xl mb-4">
-                        <span className="text-[#80ed99]">A Web</span> <span className="text-[#80edc9]">Developer</span>
+                        <span className="text-[#80edd5]"><Typewriter options={{strings:['</> A  Web  Developer','</> A  Front  End  Developer','</> A  Full  Stack  Developer'],autoStart:true,loop:true,cursor:'_'}}></Typewriter></span>
                     </motion.h2>
                     <motion.p whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
-        viewport={{ once: false, amount: 0.2 }} className="mb-8 text-base max-w-xl text-[#999999]">
-                        Frontend Web Developer specializing in Javascript, React.js, Express.js and other modern Javascript libraries.. Proficient in crafting dynamic and responsive user interfaces that elevate user experiences. Skilled in leveraging modern frontend technologies to build visually stunning and highly functional web applications.
+        viewport={{ once: false, amount: 0.2 }} className="mb-8 text-base max-w-xl text-gray-400">
+                       Full Stack Web Developer specializing in JavaScript, React.js, Node.js, Express.js, and other modern JavaScript frameworks and libraries. Highly proficient in crafting dynamic, responsive, and pixel-perfect user interfaces with modern frontend technologies like React.js, Tailwind CSS, and Material UI. Skilled in building seamless user experiences with intuitive design, interactive components, and efficient state management. Experienced in developing robust backend APIs and integrating them securely to deliver high-performance, full-featured web applications.
                     </motion.p>
                     <motion.a whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}

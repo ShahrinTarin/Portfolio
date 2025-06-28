@@ -31,7 +31,7 @@ const About = () => {
         initial={{ opacity: 0, y: 40 }}
         transition={{ duration: 0.8, delay: 0.5 }}
        viewport={{ once: false, amount: 0.2 }}
-        className="max-w-3xl mx-auto text-gray-400 leading-relaxed"
+        className="max-w-5xl mx-auto text-gray-400 leading-relaxed"
       >
             Assalamu Alaikum! I am Shahrin Akther, a dedicated and enthusiastic React front-end developer
         with a solid foundation in full-stack development. Over the past 9 months, I’ve been honing my skills

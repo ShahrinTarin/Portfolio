@@ -39,7 +39,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: false, amount: 0.2 }}  className="text-3xl mb-4">
-                        <span className="text-[#80ed99]">Web</span> <span className="text-[#80edc9]">Developer</span>
+                        <span className="text-[#80ed99]">A Web</span> <span className="text-[#80edc9]">Developer</span>
                     </motion.h2>
                     <motion.p whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}

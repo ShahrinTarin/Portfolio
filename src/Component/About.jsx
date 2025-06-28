@@ -28,7 +28,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.2 }}
         className="flex items-center justify-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-400 mb-6 mx-auto hover:bg-green-600 hover:text-white hover:border-green-600 transition"
       >
-        <FaUser />
+        <FaUser className='icon-bounce' />
         <span>ABOUT</span>
       </motion.button>
 

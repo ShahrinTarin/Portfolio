@@ -20,7 +20,7 @@ const About = () => {
             0 0 15px rgba(59, 130, 246, 0.2);
         }
       `}</style>
-    <section id='about' className=" mx-auto text-white text-center md:px-12 px-6 py-16 md:py-20 rounded-2xl bg-transparent shadow-lg">
+    <section id='about' className=" mx-auto text-white text-center md:px-12 px-6 py-16 md:py-20 rounded-2xl bg-transparent ">
       <motion.button
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}

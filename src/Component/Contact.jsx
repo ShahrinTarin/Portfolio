@@ -77,7 +77,7 @@ const Contact = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.2 }}
-                    className="border border-gray-600 rounded-xl p-6 md:p-8 bg-gradient-to-br from-black to-[#111]"
+                    className="border border-gray-600 rounded-xl p-6 md:p-8  to-[#111]"
                 >
                     <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                     <div className="space-y-4 text-gray-400">
@@ -123,7 +123,7 @@ const Contact = () => {
                     viewport={{ once: false, amount: 0.2 }}
 
                     onSubmit={sendMail}
-                    className="border border-gray-600 rounded-xl p-6 md:p-8 bg-gradient-to-br from-black to-[#111] space-y-6"
+                    className="border border-gray-600 rounded-xl p-6 md:p-8 to-[#111] space-y-6"
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>

@@ -4,3 +4,10 @@
 .font{
     font-family: "Noto Serif", serif;
 }
+.body {
+  background-color: #0f172a; /* Dark navy background */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px; /* Grid spacing */
+}

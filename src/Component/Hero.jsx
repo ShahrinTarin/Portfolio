@@ -34,7 +34,7 @@ const Hero = () => {
                     <p className="mb-8 text-base max-w-xl text-[#999999]">
                         Frontend Web Developer specializing in Javascript, React.js, Express.js and other modern Javascript libraries.. Proficient in crafting dynamic and responsive user interfaces that elevate user experiences. Skilled in leveraging modern frontend technologies to build visually stunning and highly functional web applications.
                     </p>
-                    <a href="#_" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                    <a href="#home" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                         <span class="w-full h-full bg-gradient-to-br from-[#80ed99] via-[#54ebff] to-[#122c12] group-hover:from-[#122c12] group-hover:via-[#54ebff] group-hover:to-[#80ed99] absolute"></span>
                         <span class="relative px-4 py-2 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
                             <span class="relative text-white flex items-center"> Download Resume <FaDownload className="ml-2 icon-bounce" /></span>

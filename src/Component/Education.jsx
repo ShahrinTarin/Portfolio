@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Education = () => {
   return (
-    <div className="text-center md:px-12 px-6 py-16  rounded-2xl">
+    <div id='education' className="text-center md:px-12 px-6 py-16  rounded-2xl">
       {/* Education badge */}
       <motion.button
         initial={{ opacity: 0, y: -20 }}

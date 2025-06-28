@@ -4,6 +4,22 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
+   <>
+   <style>{`
+        .icon-bounce {
+          animation: bounce 3s infinite ease-in-out;
+          display: inline-block;
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+        }
+        .card-glow:hover {
+          box-shadow:
+            0 4px 15px rgba(59, 130, 246, 0.3),
+            0 0 15px rgba(59, 130, 246, 0.2);
+        }
+      `}</style>
     <section id='about' className=" mx-auto text-white text-center md:px-12 px-6 py-16 md:py-20 rounded-2xl bg-transparent shadow-lg">
       <motion.button
         whileInView={{ opacity: 1, y: 0 }}
@@ -58,6 +74,7 @@ const About = () => {
         className="h-[2px] bg-gray-600 w-full mt-12 origin-left"
       ></motion.div>
     </section>
+   </>
   );
 };
 

@@ -24,7 +24,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: false, amount: 0.2 }} className="flex items-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6  hover:bg-green-600 hover:text-white hover:border-green-600 transition">
-                    <FaHome  />
+                    <FaHome className='icon-bounce '  />
                     <span className="tracking-widest hover:text-white text-gray-500">INTRODUCE</span>
                 </motion.button>
              <div className="flex flex-col-reverse gap-12 md:flex-row items-center justify-between  bg-transparent"> 
@@ -32,7 +32,7 @@ const Hero = () => {
                     <motion.h1 whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.8, delay: 0.1 }}
-        viewport={{ once: false, amount: 0.2 }} className="text-6xl font-light mb-6">
+        viewport={{ once: false, amount: 0.2 }} className="text-6xl font-light mb-6">Hi, I'm
                         Shahrin <span className="font-normal">Akther</span>
                     </motion.h1>
                     <motion.h2 whileInView={{ opacity: 1, y: 0 }}

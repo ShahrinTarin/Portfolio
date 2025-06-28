@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMarker, FaUser, FaUserGraduate } from 'react-icons/fa';
+import { FaEnvelope, FaMarker, FaUser, FaUserGraduate } from 'react-icons/fa';
 import { FaHandHoldingHand } from 'react-icons/fa6';
 import { IoHome } from "react-icons/io5";
 import logo from '/logo.png';
@@ -32,6 +32,11 @@ const Navbar = () => {
           <FaHandHoldingHand /> Projects
         </a>
       </li>
+      <li>
+        <a href="#contact" className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium text-[#999999] hover:text-[#80ed99] hover:underline">
+          <FaEnvelope /> Contact
+        </a>
+      </li>
     </>
   );
 
@@ -53,7 +58,7 @@ const Navbar = () => {
 
         {/* Resume Button */}
         <a
-          href="#resume"
+          href="#home"
           className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
         >
           <span className="w-full h-full bg-gradient-to-br from-[#80ed99] via-[#54ebff] to-[#122c12] group-hover:from-[#122c12] group-hover:via-[#54ebff] group-hover:to-[#80ed99] absolute"></span>

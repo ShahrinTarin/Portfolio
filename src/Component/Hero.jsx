@@ -19,9 +19,9 @@ const Hero = () => {
         }
       `}</style>
            <section id='home' className='py-16'>
-             <button className="flex items-center mb-8 space-x-2 border border-gray-500 px-5 py-2 rounded-full text-white hover:bg-gray-700 transition">
-                    <FaHome className="text-gray-500" />
-                    <span className="tracking-widest text-gray-500">INTRODUCE</span>
+             <button className="flex items-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6  hover:bg-green-600 hover:text-white hover:border-green-600 transition">
+                    <FaHome  />
+                    <span className="tracking-widest hover:text-white text-gray-500">INTRODUCE</span>
                 </button>
              <div className="flex flex-col-reverse gap-12 md:flex-row items-center justify-between  bg-transparent"> 
                 <div className="md:w-10/12">

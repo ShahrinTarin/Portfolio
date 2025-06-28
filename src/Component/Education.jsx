@@ -62,7 +62,7 @@ const Education = () => {
         viewport={{ once: false, amount: 0.2 }}
         className="text-2xl font-bold mt-2"
       >
-        MC College Sylhet
+        MC College, Sylhet
       </motion.h3>
 
       <motion.p

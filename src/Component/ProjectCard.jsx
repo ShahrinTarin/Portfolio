@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
         className="md:w-11/12 w-full mx-auto rounded-xl border border-gray-500 p-6 lg:flex gap-8 hover:border-green-500 transition"
       >
         {/* Left: Image */}
-        <div className="lg:w-1/2 md:p-4 flex items-center justify-center">
+        <div className="lg:w-1/2 md:p-4 mb-2 md:mb-0 flex items-center justify-center">
           <img
             src={project.image}
             alt={project.title}

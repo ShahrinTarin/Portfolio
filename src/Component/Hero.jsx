@@ -54,7 +54,7 @@ const Hero = () => {
         viewport={{ once: false, amount: 0.2 }} href="#home" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                         <span class="w-full h-full bg-gradient-to-br from-[#80ed99] via-[#54ebff] to-[#122c12] group-hover:from-[#122c12] group-hover:via-[#54ebff] group-hover:to-[#80ed99] absolute"></span>
                         <span class="relative px-4 py-2 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-                            <span class="relative text-white flex items-center"> Download Resume <FaDownload className="ml-2 icon-bounce" /></span>
+                            <a href="https://drive.google.com/file/d/1bk5LDODeFJfi7W50lbt5NAyQbROKRQXH/view?usp=sharing" class="relative text-white flex items-center" download> Download Resume <FaDownload className="ml-2 icon-bounce" /></a>
                         </span>
                     </motion.a>
                     <motion.div whileInView={{ opacity: 1, y: 0 }}

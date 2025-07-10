@@ -62,7 +62,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: false, amount: 0.2 }} className="flex space-x-6 mt-8 text-2xl">
                         <a target="_blank" href="https://github.com/ShahrinTarin"><FaGithub size={40} /></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/shahrintarin-rahman-897362340/"><FaLinkedin size={40} /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shahrintarin-rahman/"><FaLinkedin size={40} /></a>
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=61570044629513"><FaFacebook size={40} /></a>
                     </motion.div>
                 </div>

@@ -55,9 +55,10 @@ const Hero = () => {
                             <span class="w-full h-full bg-gradient-to-br from-[#80ed99] via-[#54ebff] to-[#122c12] group-hover:from-[#122c12] group-hover:via-[#54ebff] group-hover:to-[#80ed99] absolute"></span>
                             <span class="relative px-4 py-2 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
                                 <a
-                                    href="https://drive.google.com/uc?export=download&id=1bk5LDODeFJfi7W50lbt5NAyQbROKRQXH"
+                                    href="https://drive.google.com/uc?export=download&id=16g7BvZuL2CrRktHCJWxvcl6jtwj45OTH"
                                     className="relative text-white flex items-center"
                                     download
+                                    target="_blank"
                                 >
                                     Download Resume <FaDownload className="ml-2 icon-bounce" />
                                 </a>

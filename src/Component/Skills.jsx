@@ -1,10 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaTools } from "react-icons/fa";
+import { FaTools, FaCube } from "react-icons/fa"; // 🟢 FaCube as Three.js placeholder
 import {
-  SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiTailwindcss,
-  SiHtml5, SiCss3, SiAxios, SiFirebase, SiExpress, SiNextdotjs,
-  SiThreejs, SiGithub, SiGit, SiVercel, SiVisualstudiocode, SiGooglechrome
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiHtml5,
+  SiCss3,
+  SiAxios,
+  SiFirebase,
+  SiExpress,
+  SiNextdotjs,
+  SiGithub,
+  SiGit,
+  SiVercel,
+  SiVisualstudiocode,
+  SiGooglechrome,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -33,7 +46,7 @@ const Skills = () => {
       label: "Learning",
       skills: [
         { name: "Next.js", icon: <SiNextdotjs /> },
-        { name: "Three.js", icon: <SiThreejs /> },
+        { name: "Three.js", icon: <FaCube /> }, // 🟢 FIXED HERE
       ],
     },
     {
@@ -48,7 +61,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 md:px-12 bg-[#0f172a] text-gray-300 text-center">
+    <section
+      id="skills"
+      className="py-20 px-6 md:px-12 bg-[#0f172a] text-gray-300 text-center"
+    >
       <motion.button
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +95,9 @@ const Skills = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl md:text-2xl italic font-medium mb-6 text-left">{category.label}</h3>
+            <h3 className="text-xl md:text-2xl italic font-medium mb-6 text-left">
+              {category.label}
+            </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {category.skills.map((skill, i) => (
                 <div

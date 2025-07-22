@@ -31,26 +31,26 @@ const ProjectsSection = () => {
       `}</style>
       <section id='projects' className="py-20 w-11/12 mx-auto space-y-12">
         <motion.button
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: false, amount: 0.2 }}
-                        className="flex items-center justify-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6 mx-auto hover:bg-green-600 hover:text-white hover:border-green-600 transition"
-                      >
-                         <FaFolderOpen className='icon-bounce' />
-                        <span>PROJECTS</span>
-                      </motion.button>
-      {projects.map((project, index) => (
-        <ProjectCard key={index} project={project} />
-      ))}
-      <motion.div
-        initial={{ opacity: 0, scaleX: 0 }}
-        whileInView={{ opacity: 1, scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        viewport={{ once: false, amount: 0.2 }}
-        className="h-[2px] bg-gray-600 w-full mt-12 origin-left"
-      ></motion.div>
-    </section></>
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="flex items-center justify-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6 mx-auto hover:bg-green-600 hover:text-white hover:border-green-600 transition"
+        >
+          <FaFolderOpen className='icon-bounce' />
+          <span>PROJECTS</span>
+        </motion.button>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          whileInView={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h-[2px] bg-gray-600 w-full mt-12 origin-left"
+        ></motion.div>
+      </section></>
   );
 };
 

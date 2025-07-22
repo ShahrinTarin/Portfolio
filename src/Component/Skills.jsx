@@ -1,147 +1,101 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaTools } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaTools } from "react-icons/fa";
+import {
+  SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiTailwindcss,
+  SiHtml5, SiCss3, SiAxios, SiFirebase, SiExpress, SiNextdotjs,
+  SiThreejs, SiGithub, SiGit, SiVercel, SiVisualstudiocode, SiGooglechrome
+} from "react-icons/si";
 
 const Skills = () => {
+  const skillCategories = [
+    {
+      label: "Expert In",
+      skills: [
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "React", icon: <SiReact /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+      ],
+    },
+    {
+      label: "Comfortable In",
+      skills: [
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "HTML5", icon: <SiHtml5 /> },
+        { name: "CSS3", icon: <SiCss3 /> },
+        { name: "Axios", icon: <SiAxios /> },
+        { name: "Firebase", icon: <SiFirebase /> },
+        { name: "Express.js", icon: <SiExpress /> },
+      ],
+    },
+    {
+      label: "Learning",
+      skills: [
+        { name: "Next.js", icon: <SiNextdotjs /> },
+        { name: "Three.js", icon: <SiThreejs /> },
+      ],
+    },
+    {
+      label: "Tools",
+      skills: [
+        { name: "Git", icon: <SiGit /> },
+        { name: "GitHub", icon: <SiGithub /> },
+        { name: "VS Code", icon: <SiVisualstudiocode /> },
+        { name: "Chrome Dev Tools", icon: <SiGooglechrome /> },
+      ],
+    },
+  ];
+
   return (
-    <>
-      <style>{`
-        .icon-bounce {
-          animation: bounce 3s infinite ease-in-out;
-          display: inline-block;
-        }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-5px); }
-        }
-        .card-glow:hover {
-          box-shadow:
-            0 4px 15px rgba(59, 130, 246, 0.3),
-            0 0 15px rgba(59, 130, 246, 0.2);
-        }
-      `}</style>
-      <section id="skills" className="md:py-20 md:px-12 px-6 py-16 text-center text-gray-300">
-        <motion.button
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="flex items-center justify-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6 mx-auto hover:bg-green-600 hover:text-white hover:border-green-600 transition"
-        >
-          <FaTools className='icon-bounce' />
-          <span>SKILLS</span>
-        </motion.button>
-        <motion.h2
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="text-5xl font-light mb-6"
-        >
-          Core <span className="text-green-500 font-bold">Skills</span>
-        </motion.h2>
+    <section id="skills" className="py-20 px-6 md:px-12 bg-[#0f172a] text-gray-300 text-center">
+      <motion.button
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center space-x-2 border border-gray-500 px-6 py-2 rounded-full text-gray-500 mb-6 mx-auto hover:bg-green-600 hover:text-white hover:border-green-600 transition"
+      >
+        <FaTools className="icon-bounce" />
+        <span>SKILLS</span>
+      </motion.button>
 
-        <div className="max-w-7xl mx-auto flex flex-col space-y-6 md:space-y-10 text-left">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="text-4xl md:text-5xl font-light mb-12"
+      >
+        Core <span className="text-green-500 font-bold">Skills</span>
+      </motion.h2>
 
-          {/** Each block uses flex-row justify-between + badges justify-start */}
+      <div className="space-y-12">
+        {skillCategories.map((category, index) => (
           <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between"
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
           >
-            <span className="block text-lg md:text-xl italic font-medium mb-2 md:mb-0">
-              Expert In
-            </span>
-            <div className="flex flex-wrap justify-start gap-3 md:gap-4">
-              <SkillBadge name="JavaScript" />
-              <SkillBadge name="React" />
-              <SkillBadge name="React Router" />
-              <SkillBadge name="Node.js" />
-              <SkillBadge name="MongoDB" />
+            <h3 className="text-xl md:text-2xl italic font-medium mb-6 text-left">{category.label}</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {category.skills.map((skill, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-center justify-center bg-[#1e1e1e] border border-lime-400 rounded-lg p-6 shadow-md hover:shadow-lime-400 transition duration-300"
+                >
+                  <div className="text-4xl text-green-400 mb-2">{skill.icon}</div>
+                  <span className="text-white font-semibold">{skill.name}</span>
+                </div>
+              ))}
             </div>
           </motion.div>
-
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between"
-          >
-            <span className="block text-lg md:text-xl italic font-medium mb-2 md:mb-0">
-              Comfortable In
-            </span>
-            <div className="flex flex-wrap justify-start gap-3 md:gap-4">
-              <SkillBadge name="Tailwind" />
-              <SkillBadge name="HTML" />
-              <SkillBadge name="CSS" />
-              <SkillBadge name="Axios" />
-              <SkillBadge name="Firebase" />
-              <SkillBadge name="Express.js" />
-            </div>
-          </motion.div>
-
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between"
-          >
-            <span className="block text-lg md:text-xl italic font-medium mb-2 md:mb-0">
-              Learning
-            </span>
-            <div className="flex flex-wrap justify-start gap-3 md:gap-4">
-              <SkillBadge name="Next.js" />
-              <SkillBadge name="Three.js" />
-            </div>
-          </motion.div>
-
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="flex flex-col md:flex-row md:items-center md:justify-between"
-          >
-            <span className="block text-lg md:text-xl italic font-medium mb-2 md:mb-0">
-              Tools
-            </span>
-            <div className="flex flex-wrap justify-start gap-3 md:gap-4">
-              <SkillBadge name="Git" />
-              <SkillBadge name="GitHub" />
-              <SkillBadge name="Chrome Dev Tools" />
-              <SkillBadge name="VS Code" />
-            </div>
-          </motion.div>
-
-        </div>
-        <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="h-[2px] bg-gray-600 w-full mt-12 origin-left"
-        ></motion.div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 };
-
-const SkillBadge = ({ name }) => (
-  <span className="
-    relative inline-block p-[2px] rounded-full 
-    bg-gradient-to-r from-[#80ed99] to-[#38b000]
-  ">
-    <span className="
-      block rounded-full bg-black px-4 py-1 text-[#80ed99]
-      hover:bg-gradient-to-r hover:from-[#80ed99] hover:to-[#38b000] hover:text-black transition
-    ">
-      {name}
-    </span>
-  </span>
-);
 
 export default Skills;
